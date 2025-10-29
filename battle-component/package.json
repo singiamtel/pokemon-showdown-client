@@ -1,0 +1,51 @@
+{
+  "name": "@pkmn/battle-component",
+  "version": "0.1.0",
+  "description": "Web component for embedding Pokemon Showdown battles",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pokemon",
+    "showdown",
+    "battle",
+    "web-component",
+    "custom-element"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@pkmn/client": "^0.7.16",
+    "@pkmn/protocol": "^0.6.19",
+    "@pkmn/dex": "^0.8.18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pkmn/pokemon-showdown-client.git",
+    "directory": "battle-component"
+  }
+}

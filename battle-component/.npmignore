@@ -1,0 +1,10 @@
+src/
+node_modules/
+*.log
+.DS_Store
+tsconfig.json
+vite.config.ts
+example.html
+.gitignore
+.vscode/
+.idea/
